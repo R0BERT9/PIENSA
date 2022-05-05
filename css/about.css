@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,600&display=swap');
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#d0e562,#d0e562 50%, #fff 50%, #fff 100%);    
+}
+
+.contenedor-about{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor-about .about-box{
+    position: relative;
+    width: 320px;
+    background: #fff;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+}
+
+.contenedor-about .about-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 62, 31,.6);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0,5s;
+}
+
+.contenedor-about .about-box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s; 
+}
+
+.contenedor-about .about-box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.contenedor-about .about-box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+
+}
+
+.contenedor-about .about-box h3{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+
+.contenedor-about .about-box p{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+}
+
+.contenedor-about .about-box:hover p, .contenedor-about .about-box:hover p{
+    color: #fff;
+}
+
+@media(max-width:820px){
+    .contenedor-about .about-box{
+        width: auto;
+        margin: 5px;
+    }
+
+    #about{
+        background: #fff;
+        display: flexbox;
+    }
+}
+
+@media(max-width:550px){
+    #about{
+        background: #fff;
+    }
+
+    .contenedor-about .about-box{
+        width: auto;
+        margin: 5px ;
+    }
+}
+
+@media(max-width:1100px){
+    #about{
+        min-height: 0vh;
+    }
+}
+
+.contenedor h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+

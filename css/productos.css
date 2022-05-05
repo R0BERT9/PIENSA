@@ -1,0 +1,45 @@
+.container-productos{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+#about-productos{
+    color: #091726;
+    height: 70vh;
+    padding-top: 50px;
+    height: 375px;
+}
+
+#about-productos h2,p{
+    padding-bottom: 20px;
+}
+
+
+.about-left{
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+}
+
+.about-left .large{
+    font-weight: 500;
+    font-size: 30px
+}
+
+.about-right{
+    float: right;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.about-right p{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#about-productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
